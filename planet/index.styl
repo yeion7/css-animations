@@ -49,13 +49,14 @@ h1
 .line
   border 8px solid $stroke
   position relative
-  border-radius 50%
+  width 100px
+  height 100px
+  border-color $stroke transparent transparent
+  border-radius 50% /30px 30px 8px 0px 
+  top 25px
+  left 40px
+  transform rotate(-40deg)
   
-  width 220px
-  height 220px
-  top 18px
-  left 15px
-
 
 .crater
   width 20px
@@ -99,21 +100,98 @@ h1
     top 130px
     left 140px
 
-.ring-1,
-.ring-2
-  border 8px solid $stroke
-  border-radius 50%
-  display block
-  width 280px
-  height 40px
+.ring-1
   position absolute
-  left 260px
-  top 280px
-  transform rotate(-25deg)
+  width 290px
+  height 100px
+  border 8px solid $stroke
+  border-color $stroke transparent transparent
+  border-radius 200% /250px 350px 0px 0px 
+  top 250px
+  left 250px
+  transform rotate(150deg)
+  z-index 100
+
+.borde-1
+  position absolute
+  width 80px
+  height 100px
+  border 8px solid $stroke
+  border-color  $stroke transparent transparent 
+  border-radius 50% /110px 100px 0px 0px 
+  top 200px
+  left 440px
+  transform rotate(45deg)
   
+
+.ring-1
+  position absolute
+  width 290px
+  height 100px
+  border 8px solid $stroke
+  border-color $stroke transparent transparent
+  border-radius 200% /250px 350px 0px 0px 
+  top 250px
+  left 250px
+  transform rotate(150deg)
+  z-index 100
+
+.borde-1
+  position absolute
+  width 80px
+  height 100px
+  border 8px solid $stroke
+  border-color  $stroke transparent transparent 
+  border-radius 50% /110px 100px 0px 0px 
+  top 200px
+  left 440px
+  transform rotate(45deg)
   
+.borde-2
+  position absolute
+  width 80px
+  height 100px
+  border 8px solid $stroke
+  border-color  $stroke transparent transparent 
+  border-radius 50% /110px 100px 0px 0px 
+  top 285px
+  left 280px
+  transform rotate(-130deg) 
+  
+
 .ring-2
-  transform rotate(15deg)
+  position absolute
+  width 290px
+  height 100px
+  border 8px solid $stroke
+  border-color $stroke transparent transparent
+  border-radius 200% /250px 350px 0px 0px 
+  top 250px
+  left 250px
+  transform rotate(-160deg)
+  z-index 100
+
+.borde-3
+  position absolute
+  width 80px
+  height 100px
+  border 8px solid $stroke
+  border-color  $stroke transparent transparent 
+  border-radius 50% /110px 100px 0px 0px 
+  top 285px
+  left 440px
+  transform rotate(95deg)
+  
+.borde-4
+  position absolute
+  width 80px
+  height 100px
+  border 8px solid $stroke
+  border-color  $stroke transparent transparent 
+  border-radius 50% /110px 100px 0px 0px 
+  top 215px
+  left 270px
+  transform rotate(-65deg) 
   
 .luna1
   width 15px
@@ -131,7 +209,7 @@ h1
   border 8px solid $stroke
   border-radius 50px
   position absolute
-  top 160px
+  top 150px
   left 500px
   box-shadow -11px 0px 1px rgba(#000, .2) inset
   transform rotate(40deg)
