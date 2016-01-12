@@ -1,0 +1,356 @@
+$bg = #04475C
+
+$stroke = #0B303F
+$yellow = #FDC43E
+$red = #F67F47
+$blue = #3EB4C1
+$shadow = #F97E2B
+
+h1
+  margin 30px 0
+  text-align: center
+  font-family: sans-serif
+  
+.artboard
+  width 800px
+  height 600px
+  color #eee
+  border 20px solid white
+  margin 50px auto
+  background $bg
+  box-shadow 0px 3px 60px rgba(#000, .4)
+  position relative
+  
+  
+.planet 
+  width 220px
+  height 220px
+  left 290px
+  top 190px
+  border-radius 50%
+  overflow hidden
+  position absolute
+  background $yellow
+  border 8px solid $stroke
+
+    
+.planet-shadow
+  width 220px
+  height 220px
+  top 0px
+  left 2px
+  position absolute
+  border-radius 50%
+  box-shadow -20px 0px 0px rgba($shadow, .9) inset,
+            -45px 0px 5px rgba($shadow, .2) inset,
+            25px 0px 0px rgba($shadow, .1) inset
+  transform rotate(40deg)
+
+.line
+  border 8px solid $stroke
+  position relative
+  border-radius 50%
+  
+  width 220px
+  height 220px
+  top 18px
+  left 15px
+
+
+.crater
+  width 20px
+  height 20px
+  position absolute
+  border-radius 50%
+  background $yellow
+  box-shadow -6px 2px 5px rgba($shadow, .4) inset
+  transform rotate(45deg)
+
+  &-1
+    top 100px
+    left 35px
+    
+  &-2
+    top 65px
+    left 75px
+
+
+  &-3
+    top 45px
+    left 110px
+    
+  &-4
+    top 40px
+    left 150px
+    
+  &-5
+    top 80px
+    left 150px
+    
+  &-6
+    top 100px
+    left 110px
+    
+  &-7
+    top 150px
+    left 80px
+
+  &-8
+    top 130px
+    left 140px
+
+.ring-1,
+.ring-2
+  border 8px solid $stroke
+  border-radius 50%
+  display block
+  width 280px
+  height 40px
+  position absolute
+  left 260px
+  top 280px
+  transform rotate(-25deg)
+  
+  
+.ring-2
+  transform rotate(15deg)
+  
+.luna1
+  width 15px
+  height 15px
+  background $yellow
+  border 8px solid $stroke
+  border-radius 50px
+  position absolute
+  top 140px
+  left 450px
+.luna2
+  width 40px
+  height 40px
+  background $blue
+  border 8px solid $stroke
+  border-radius 50px
+  position absolute
+  top 160px
+  left 500px
+  box-shadow -11px 0px 1px rgba(#000, .2) inset
+  transform rotate(40deg)
+
+
+.stars div[class^="star"]
+  width: 30px
+  height: 30px
+  position: absolute
+
+  &:before,
+  &:after
+    content: ""
+    background: $red
+    display: block
+    width: 40%
+    height: 100%
+    border-radius: 20px
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+
+  &:after
+    transform: translate(-50%, -50%) rotate(90deg)
+
+  &.blue:before,
+  &.blue:after
+    background: $blue
+
+  &.yellow:before,
+  &.yellow:after
+    background: $yellow
+
+  &.med
+    transform: scale(0.6)
+
+  &.small
+    transform: scale(0.4)
+    
+.star1
+  top 300px
+  left 20px
+
+.star2
+  top 350px
+  left 70px
+  
+.star3
+  top 250px
+  left 90px
+
+.star4
+  top 150px
+  left 110px
+
+.star5
+  top 160px
+  left 180px
+
+.star6
+  top 250px
+  left 180px
+  
+.star7
+  top 350px
+  left 130px
+
+.star8
+  top 370px
+  left 180px
+
+.star9
+  top 420px
+  left 240px
+  
+.star10
+  top 360px
+  left 240px
+
+.star11
+  top 300px
+  left 210px
+
+.star12
+  top 200px
+  left 250px
+
+.star13
+  top 150px
+  left 270px
+
+.star14
+  top 180px
+  left 300px
+
+.star15
+  top 150px
+  left 350px
+
+.star16
+  top 160px
+  left 380px
+
+.star17
+  top 120px
+  left 420px
+
+.star18
+  top 100px
+  left 480px
+
+.star19
+  top 120px
+  left 540px
+
+
+.star20
+  top 160px
+  left 600px
+  
+.star21
+  top 210px
+  left 570px
+  
+.star22
+  top 210px
+  left 630px
+
+.star23
+  top 270px
+  left 570px
+
+
+.star24
+  top 320px
+  left 640px
+
+.star25
+  top 250px
+  left 700px
+
+.star26
+  top 170px
+  left 700px
+
+.star27
+  top 370px
+  left 700px
+
+
+.star28
+  top 330px
+  left 570px
+
+.star29
+  top 430px
+  left 570px
+
+
+.star30
+  top 430px
+  left 470px
+
+
+.star31
+  top 450px
+  left 370px
+
+.star32
+  top 450px
+  left 320px
+
+.star33
+  top 400px
+  left 320px
+
+.star34
+  top 500px
+  left 420px
+
+.star35
+  top 100px
+  left 220px
+
+.star36
+  top 80px
+  left 340px
+
+
+.star37
+  top 480px
+  left 140px
+
+.star38
+  top 80px
+  left 640px
+
+.star39
+  top 480px
+  left 640px
+
+.pulse
+  animation: pulse 1s linear infinite
+
+.pulse-1
+  animation: pulse 1s 300ms linear infinite
+
+.pulse-2
+  animation: pulse 1s 600ms linear infinite
+
+.pulse-3
+  animation: pulse 1s 900ms linear infinite
+
+@keyframes pulse
+  0%
+    transform: scale(1)
+  90%
+    transform: scale(0.3)
+
+  100%
+    transform: scale(1)
